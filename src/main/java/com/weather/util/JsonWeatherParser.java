@@ -1,7 +1,6 @@
 package com.weather.util;
 
 
-
 import com.weather.domain.Weather;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;

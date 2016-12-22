@@ -1,4 +1,4 @@
-package com.weather.web;
+package com.weather.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
