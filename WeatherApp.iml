@@ -16,11 +16,14 @@
     </facet>
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="Spring Application Context" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/appContext.xml</file>
-        </fileset>
         <fileset id="web application context" name="MVC application context" removed="true">
           <file>file://$MODULE_DIR$/src/main/webapp/appContext.xml</file>
+        </fileset>
+        <fileset id="web mvc-dispatcher servlet context" name="MVC mvc-dispatcher servlet context" removed="true" />
+        <fileset id="initializer com.weather.config.Initializer servlet context" name="MVC dispatcher initializer servlet context" removed="true" />
+        <fileset id="initializer com.weather.config.Initializer root context" name="MVC dispatcher initializer root context" removed="true" />
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/weather/config/WebAppConfig.java</file>
         </fileset>
       </configuration>
     </facet>
