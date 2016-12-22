@@ -14,12 +14,12 @@
 //public class Initializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 //
 //
-////    protected Filter[] getServletFilter() {
-////        CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
-////        encodingFilter.setEncoding("UTF-8");
-////        encodingFilter.setForceEncoding(true);
-////        return new Filter[]{encodingFilter};
-////    }
+//    protected Filter[] getServletFilter() {
+//        CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
+//        encodingFilter.setEncoding("UTF-8");
+//        encodingFilter.setForceEncoding(true);
+//        return new Filter[]{encodingFilter};
+//    }
 //
 //    @Override
 //    protected Class<?>[] getRootConfigClasses() {
@@ -28,11 +28,11 @@
 //
 //    @Override
 //    protected Class<?>[] getServletConfigClasses() {
-//        return new Class<?>[0];
+//        return null;
 //    }
 //
 //    @Override
 //    protected String[] getServletMappings() {
-//        return new String[0];
+//        return new String[]{"/"};
 //    }
 //}
