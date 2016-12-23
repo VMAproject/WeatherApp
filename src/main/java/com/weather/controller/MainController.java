@@ -1,4 +1,4 @@
-package com.weather.web;
+package com.weather.controller;
 
 
 import com.weather.domain.Weather;

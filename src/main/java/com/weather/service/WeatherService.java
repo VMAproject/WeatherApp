@@ -1,7 +1,6 @@
 package com.weather.service;
 
 
-
 import com.weather.domain.Weather;
 import com.weather.util.JsonWeatherParser;
 import org.json.simple.parser.ParseException;
