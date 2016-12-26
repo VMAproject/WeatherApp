@@ -25,7 +25,9 @@ public class MainController {
     }
 
     @RequestMapping(value = "/weather/{city}", method = RequestMethod.POST)
-    public @ResponseBody Weather weather(
+    public
+    @ResponseBody
+    Weather weather(
             @PathVariable(value = "city") String city) throws IOException, ParseException {
         return weatherService.getWeather(city);
     }
