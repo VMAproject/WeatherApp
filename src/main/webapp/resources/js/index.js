@@ -1,6 +1,6 @@
-$(document).ready(function($) {
+$(document).ready(function ($) {
 
-    $("#search-form").submit(function(event) {
+    $("#search-form").submit(function (event) {
         event.preventDefault();
         sendWeatherRequest();
     });
@@ -9,16 +9,16 @@ $(document).ready(function($) {
 function sendWeatherRequest() {
     var city = $("#city").val();
     $.ajax({
-        type : "POST",
-        contentType : "application/x-www-form-urlencoded; charset=UTF-8",
-        url : "/weather/".concat(city),
-        data : JSON.stringify(city),
-        dataType : 'json',
-        timeout : 100000,
-        success : function(data) {
+        type: "POST",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        url: "/weather/".concat(city),
+        data: JSON.stringify(city),
+        dataType: 'json',
+        timeout: 100000,
+        success: function (data) {
             renderResponse(data);
         },
-        error : function(e) {
+        error: function (e) {
             displayError(e);
         }
     });
@@ -40,6 +40,6 @@ function renderResponse(data) {
 
 
 function displayError() {
-    $('#error-field').text("Enter correct city").css('color','red');
+    $('#error-field').text("Enter correct city").css('color', 'red');
 }
 
