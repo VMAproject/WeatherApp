@@ -4,7 +4,6 @@ package com.weather.controller;
 import com.weather.domain.Weather;
 import com.weather.service.WeatherService;
 import org.json.simple.parser.ParseException;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
